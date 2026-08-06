@@ -20,6 +20,7 @@ namespace EjercicioFormulario
 
         private void frmDatosPersonales_Load(object sender, EventArgs e)
         {
+            // Cartel Datos
             MessageBox.Show("Cargue sus datos personales", "Bienvenido");
         }
 
