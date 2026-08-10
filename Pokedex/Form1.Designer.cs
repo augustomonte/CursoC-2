@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.dgvPokemons = new System.Windows.Forms.DataGridView();
+            this.pbPokemon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPokemons)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvPokemons
@@ -39,21 +41,33 @@
             this.dgvPokemons.Name = "dgvPokemons";
             this.dgvPokemons.RowHeadersWidth = 62;
             this.dgvPokemons.RowTemplate.Height = 28;
-            this.dgvPokemons.Size = new System.Drawing.Size(597, 357);
+            this.dgvPokemons.Size = new System.Drawing.Size(688, 380);
             this.dgvPokemons.TabIndex = 0;
             this.dgvPokemons.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPokemons_CellContentClick);
+            this.dgvPokemons.SelectionChanged += new System.EventHandler(this.dgvPokemons_SelectionChanged);
+            // 
+            // pbPokemon
+            // 
+            this.pbPokemon.Location = new System.Drawing.Point(706, 63);
+            this.pbPokemon.Name = "pbPokemon";
+            this.pbPokemon.Size = new System.Drawing.Size(182, 163);
+            this.pbPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPokemon.TabIndex = 1;
+            this.pbPokemon.TabStop = false;
             // 
             // frmInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(830, 485);
+            this.ClientSize = new System.Drawing.Size(949, 524);
+            this.Controls.Add(this.pbPokemon);
             this.Controls.Add(this.dgvPokemons);
             this.Name = "frmInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pokedex";
             this.Load += new System.EventHandler(this.frmInicial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPokemons)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPokemon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -61,6 +75,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvPokemons;
+        private System.Windows.Forms.PictureBox pbPokemon;
     }
 }
 
