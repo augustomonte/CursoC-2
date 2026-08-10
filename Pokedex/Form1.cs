@@ -30,8 +30,8 @@ namespace Pokedex
             PokemonNegocio negocio = new PokemonNegocio();
             listapokemon = negocio.listar();
             dgvPokemons.DataSource = listapokemon;
-
-            pbPokemon.Load(listapokemon[0].UrlImagen);
+            dgvPokemons.Columns["UrlImagen"].Visible = false;
+            cargarImagen(listapokemon[0].UrlImagen);
 
         }
 

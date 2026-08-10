@@ -41,16 +41,16 @@
             this.dgvPokemons.Name = "dgvPokemons";
             this.dgvPokemons.RowHeadersWidth = 62;
             this.dgvPokemons.RowTemplate.Height = 28;
-            this.dgvPokemons.Size = new System.Drawing.Size(688, 380);
+            this.dgvPokemons.Size = new System.Drawing.Size(867, 380);
             this.dgvPokemons.TabIndex = 0;
             this.dgvPokemons.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPokemons_CellContentClick);
             this.dgvPokemons.SelectionChanged += new System.EventHandler(this.dgvPokemons_SelectionChanged);
             // 
             // pbPokemon
             // 
-            this.pbPokemon.Location = new System.Drawing.Point(706, 63);
+            this.pbPokemon.Location = new System.Drawing.Point(912, 63);
             this.pbPokemon.Name = "pbPokemon";
-            this.pbPokemon.Size = new System.Drawing.Size(182, 163);
+            this.pbPokemon.Size = new System.Drawing.Size(378, 380);
             this.pbPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPokemon.TabIndex = 1;
             this.pbPokemon.TabStop = false;
@@ -59,7 +59,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(949, 524);
+            this.ClientSize = new System.Drawing.Size(1302, 539);
             this.Controls.Add(this.pbPokemon);
             this.Controls.Add(this.dgvPokemons);
             this.Name = "frmInicial";
